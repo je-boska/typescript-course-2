@@ -5,9 +5,13 @@ const userName = "test-user"
 
 console.log(userName)
 
+function clickHandler(message: string) {
+    console.log("click! " + message)
+}
+
 // A comment
 const button = document.querySelector("button")!
 
-button.addEventListener("click", () => {
-    console.log("Clicked")
-})
+if (button) {
+    button.addEventListener("click", clickHandler.bind(null, "hello"))
+}
