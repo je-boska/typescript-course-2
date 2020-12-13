@@ -66,5 +66,21 @@
     /* Advanced Options */
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
-  }
+  },
+  /* Example uses of exclude. If not specified, node_modules will be excluded by default */
+  "exclude": [
+    "*.dev.ts",
+    "**/*.dev.ts",
+    "node_modules"
+  ],
+  /* Example uses of include. If not specified, all files will be included by default */
+  "include": [
+    "app.ts",
+    "analytics.ts"
+  ],
+  /* Example use of files. This does not allow you to specify folders, only single files.
+  "files": [
+    "app.ts"
+  ]
+  */
 }
